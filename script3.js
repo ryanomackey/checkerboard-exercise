@@ -3,6 +3,9 @@
 
 document.body.style.margin = 0;
 
+var div = document.createElement('div');
+document.body.appendChild(div);
+
 var box = {};
 
 for (var i = 0; i < 81; i++) {
@@ -15,5 +18,5 @@ for (var i = 0; i < 81; i++) {
   } else {
     box[i].style.backgroundColor = 'black';
   }
-  document.body.appendChild(box[i]);
+  div.appendChild(box[i]);
 }
